@@ -12,10 +12,8 @@ const diag1Verify = (linha, coluna) => {
     let i = linha - maxDelta
     let j = coluna - maxDelta
     let countPlayer = 0
-    console.log(arrBoard[i][j])
 
     while (arrBoard[i][j]) {
-        console.log(`teste`)
         if (arrBoard[i][j] === 1) {
             countPlayer++
         } else {
@@ -46,11 +44,8 @@ const diag2Verify = (linha, coluna) => {
     let i = linha - maxDelta
     let j = coluna + maxDelta
     let countPlayer = 0
-  
-    console.log(arrBoard[i][j])
 
     while (arrBoard[i][j]) {
-        console.log(`teste`)
         if (arrBoard[i][j] === 1) {
             countPlayer++
         } else {
