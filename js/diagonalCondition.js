@@ -8,7 +8,14 @@ let arrBoard = [
   ];
 
 const diag1Verify = (linha, coluna) => {
-    let maxDelta = coluna > linha ? linha : coluna
+    let maxDelta = 0
+
+    if (coluna > linha) {
+        maxDelta = linha
+    } else {
+        maxDelta = coluna
+    }
+
     let i = linha - maxDelta
     let j = coluna - maxDelta
     let countPlayer = 0
@@ -25,7 +32,7 @@ const diag1Verify = (linha, coluna) => {
         i++
         j++
 
-        if (i >= arrBoard.length || j >= arrBoard[0].length) {
+        if (i >= arrBoard.length || j >= arrBoard[0].length) { // Apenas para nao dar erro quando estourar as dimensoes da Matris
             break
         }
     }
@@ -57,7 +64,7 @@ const diag2Verify = (linha, coluna) => {
         i++
         j--
 
-        if (i >= arrBoard.length || j <= 0) {
+        if (i >= arrBoard.length || j <= 0) { // Apenas para nao dar erro quando estourar as dimensoes da Matris
             break
         }
     }
