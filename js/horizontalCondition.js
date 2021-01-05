@@ -2,9 +2,9 @@ let arrBoard = [
   [0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0],
+  [1, 1, 1, 1, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 1, 1, 0, 0],
 ];
 
 const verifyHorizontal = () => {
@@ -23,8 +23,12 @@ const verifyHorizontal = () => {
         player2++;
         player1 = 0;
       }
+      if (arrBoard[i][j] === 0) {
+        player1 = 0;
+        player2 = 0;
+      }
       if (player1 + player2 === 4) {
-        console.log("Você Ganhou!!");
+        return "Você Ganhou!!";
       }
     }
   }

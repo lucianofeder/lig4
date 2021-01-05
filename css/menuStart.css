@@ -2,8 +2,7 @@
   border: solid 5px #ff6969;
   border-radius: 3px;
   box-shadow: 0 0 0 2em #ebbd7a, 0 0 0 4em cadetblue;
-  width: 700px;
-  height: 450px;
+  padding: 20px;
   background-color: cadetblue;
   width: auto;
   height: auto;
@@ -20,7 +19,7 @@
   font-size: 55px;
   font-weight: bold;
 }
-#click {
+#startGame {
   display: flex;
   justify-content: center;
 }
