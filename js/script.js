@@ -28,29 +28,31 @@ let vetorBoard = [
     [0,0,0,0,0,0,0]     //5
 ]
 
-function validahorzontal() {
-for (let i = 0; i < vetorBoard.length; i++) {
-    let count1 = 0
-    let count2 = 0
-    for (let j = 0; j < vetorBoard[0].length; j++) {
-        
-        if (vetorBoard[i][j] === 1) {
-            count1++
-            count2 = 0
-        }
-        if (vetorBoard[i][j] === 2) {
-            count1 = 0
-            count2++
-        }
-    }
-    if (count1 + count2 === 4) {
-        break
-    } 
+let fillVector = (k,z) => {
     
+    vetorBoard[z][k] = 'b'
+            
 }
 
+for(let k=0; k<7;k++){
+    let selectColumn = document.getElementById('column-'+k)
+
+    selectColumn.addEventListener('click',(evt)=>{
+        for(let z=5; z>=0; z--){
+            let selectCel = document.getElementById(k+'-'+z)
+            let searchChild = selectCel.querySelector('div')
+            if(searchChild){
+                console.log('Aqui já tem uma Bola! vou colocar na de cima')
+            }else{
+                let fillCel = document.createElement('div')
+                selectCel.appendChild(fillCel)
+                fillCel.classList.add('player1Balls')
+                fillVector(k,z)
+                console.log('k -' +k)
+                console.log('z -' +z)
+                console.log(vetorBoard)
+                break
+            }
+        }
+    })
 }
-
-
-
-
