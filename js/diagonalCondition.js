@@ -7,7 +7,7 @@ let arrBoard = [
     ['_', '_', '_', '_', '_', '_', '_'],
   ];
 
-const diag1Verify = (linha, coluna) => {
+const diagLeftToRightVerify = (linha, coluna) => {
     let maxDelta = 0
 
     if (coluna > linha) {
@@ -38,7 +38,7 @@ const diag1Verify = (linha, coluna) => {
     }
 }
 
-const diag2Verify = (linha, coluna) => {
+const diagRightToLeftVerify = (linha, coluna) => {
     let maxDelta = 0
     let lineLenght = arrBoard[0].length 
 
