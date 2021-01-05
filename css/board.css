@@ -1,11 +1,7 @@
-body{
-    background:gray;
-}
 .glass{
     margin: 0 auto;
-    margin-top: 165px;
-    width: 1110px;
-    height: 540px;
+    padding: 20px;
+    width: 520px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.2);
@@ -15,26 +11,16 @@ body{
     justify-content: center;
     align-items: center;
 }
-.column-modifier{
-    width :135px;
-    height : 474px;
-    display : flex;
-    flex-direction: column;
-    border-radius : 8px;
-}
-.column-modifier:nth-child(2n){
-    margin: 0 10px;
-}
+
 .cel-modifier{
-    width :135px;
-    height: 79px;
-    border-radius : 8px;
-    border : 4px solid white;
+    width :70px;
+    height: 70px;
+    border : 2px solid white;
     transition: background-color, border;
     transition-duration: 0.5s;
 }
-.cel-modifier:hover{
-    background-color: white;
-    border:4px solid black;
-    cursor: pointer;
+
+.column-modifier:hover {
+    background-color: rgba(250, 250, 250, 0.4);
+
 }
