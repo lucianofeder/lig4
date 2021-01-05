@@ -28,6 +28,29 @@ let vetorBoard = [
     [0,0,0,0,0,0,0]     //5
 ]
 
+function validahorzontal() {
+for (let i = 0; i < vetorBoard.length; i++) {
+    let count1 = 0
+    let count2 = 0
+    for (let j = 0; j < vetorBoard[0].length; j++) {
+        
+        if (vetorBoard[i][j] === 1) {
+            count1++
+            count2 = 0
+        }
+        if (vetorBoard[i][j] === 2) {
+            count1 = 0
+            count2++
+        }
+    }
+    if (count1 + count2 === 4) {
+        break
+    } 
+    
+}
+
+}
+
 
 
 
