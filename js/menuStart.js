@@ -1,7 +1,5 @@
-const button = document.getElementById("click");
+const button = document.getElementById("startGame");
 const click = () => {
-  if (button) {
-    document.getElementById("menuStart").style.display = "none";
-  }
+  document.getElementById("menuStart").style.display = "none";
 };
-addEventListener("click", click);
+button.addEventListener("click", click);
