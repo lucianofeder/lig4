@@ -19,23 +19,31 @@
     
     <div class="pontos">
         <div id="player" class="pontuação">Você!</div>
-        <div id="player1Balls"></div>
+        
         <div id="bot" class="pontuação">PC</div>
-        <div id="player2Balls"></div>
+        
         <span id="player-pontos">0</span>:<span id="bot-pontos">0</span>
     </div>
-
+            <!--O posicionamento da Bola dentro das 2 colunas
+                é para conseguir começar a trabalhar com elas
+                vendo suas dimensões e classes -->
     <div id="board">
         <div id="coluna1" class="colunas">
-            <div id="linha1" class="linhas"></div>
+            <div id="linha1" class="linhas">
+                <div class="player1Balls"></div>
+            </div>
+            
             <div id="linha2" class="linhas"></div>
+            
             <div id="linha3" class="linhas"></div>
             <div id="linha4" class="linhas"></div>
             <div id="linha5" class="linhas"></div>
             <div id="linha6" class="linhas"></div>
         </div>
         <div id="coluna2" class="colunas">
-            <div id="linha1" class="linhas"></div>
+            <div id="linha1" class="linhas">
+                <div class="player2Balls"></div>
+            </div>
             <div id="linha2" class="linhas"></div>
             <div id="linha3" class="linhas"></div>
             <div id="linha4" class="linhas"></div>
@@ -84,7 +92,7 @@
         </div>
     </div>
 
-
+<script src="js/playersTurn.js"></script>
 </body>
 
 </html>
