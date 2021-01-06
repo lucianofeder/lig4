@@ -54,5 +54,7 @@ for(let k=0; k<7;k++){
                 break
             }
         }
+        let columnNumber = evt.currentTarget.id.replace(/column-/i, "")
+        winVerticalCondition(columnNumber)
     })
 }
