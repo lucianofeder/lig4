@@ -1,23 +1,23 @@
-const turnPlayer1 = () => {
-   
-    p.innerHTML = "Vez do<br> Jogador 1"
-    player1.appendChild(p)
- 
- }
- 
- const turnPlayer2 = () => { 
-     p.innerHTML = "Vez do<br> Jogador 2"
-     player2 .appendChild(p)
+const turnPlayer = () => {
+
+    if(playerTurn===1){
+    p.innerText = "PLAYER 1"
+    turnRound.appendChild(p)
+    }
+    if(playerTurn===2){
+     
+     p.innerHTML = "PLAYER 2"
+     turnRound.appendChild(p)
+    }
  }
 
-let player1 = document.getElementById("player1")
-let player2 = document.getElementById("player2")
+let turnRound = document.getElementById("turnRound")
 let p = document.createElement("p")
+p.innerText = "PLAYER 1"
 p.setAttribute("id", "style")
-player1.addEventListener("click", turnPlayer1)
-player2.addEventListener("click", turnPlayer2)
 
-turnPlayer1()
+turnRound.appendChild(p)
+
 
 const setPlayerTurn = () => {
     if (playerTurn === 1) {

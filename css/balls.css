@@ -3,36 +3,50 @@
     width: 90%;
     height: 90%;
     
-    background-color: #fd7474;
+    background-color: #FD7474;
     border-radius: 60%;
-    border: 2px solid #e67676;
+    border: 2px solid#e67676;
      
 }
 
 .player1Balls:hover {
     cursor: pointer;
-    background-color: #bb4646;
+    background-color: #BB4646;
     
 }
 .player2Balls {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     
     background-color: #fafa76;
     border-radius: 60%;
-    border: 2px solid #e4e463;
+    border: 2px solid #E4E463;
  
 }
 .player2Balls:hover {
     cursor: pointer;
-    background-color: #ffff32;
+    background-color: #FFFF32;
     
 }
+.fixed {
+    width: 60px;
+    height: 60px;
+    margin-top: 32px;
+    margin-left: 45px;
+    margin-right: 45px
+   
+  }
 /*
 O style é a estilização indicando a vez de cada Jogador
 */
+
+#turnRound p{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
  #style {
 
-    font-size: 0.7rem;
-    color: purple;
+    font-size: 0.8rem;
+    color: black;
+  
 }

@@ -36,6 +36,7 @@ const mainGame = () => {
             popUp(`O jogo EMPATOU`);
           }
           setPlayerTurn();
+          turnPlayer();
           break;
         }
       }
