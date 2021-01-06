@@ -1,25 +1,24 @@
 const turnPlayer = () => {
 
     if(playerTurn===1){
-    p.style.color="red"
-    p.innerText = "1"
+    p.innerText = "PLAYER 1"
     turnRound.appendChild(p)
-    console.log()
     }
     if(playerTurn===2){
      
-    p.style.color="yellow"
-     p.innerHTML = "2"
+     p.innerHTML = "PLAYER 2"
      turnRound.appendChild(p)
     }
  }
 
 let turnRound = document.getElementById("turnRound")
 let p = document.createElement("p")
-p.innerText = "1"
+p.innerText = "PLAYER 1"
 p.setAttribute("id", "style")
-p.style.color="red"
+
 turnRound.appendChild(p)
+
+
 const setPlayerTurn = () => {
     if (playerTurn === 1) {
         playerTurn = 2
