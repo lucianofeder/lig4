@@ -30,6 +30,7 @@ const mainGame = () => {
           fillVector(i, j);
           if (whoWon()) {
             popUp(`Parabens Player${playerTurn} Voce Venceu`);
+            updateScore(playerTurn);
           }
 
           if (drawVerify()) {
