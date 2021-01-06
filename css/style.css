@@ -20,6 +20,10 @@ h1 {
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
+}
+.headerScoreContent {
+  width: 100%;
 }
 .headerScore {
   background-color: #833737d5;
@@ -43,10 +47,17 @@ h1 {
 }
 
 #turnRound {
-  width: 100%;
+ 
   text-align: center;
 }
-
+.fa-arrow-right::before {
+  font-size: 57px;
+  color: #fdfd03;
+}
+.fa-arrow-left::before {
+  font-size: 57px;
+  color: #f31f21;
+}
 
 
 
