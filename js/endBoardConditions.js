@@ -84,6 +84,7 @@ const verifyDiagLeftToRight = () => {
 }
 
 
+
 const verifyDiagRightToLeft = () => {
     let maxDelta = 0
     let lineLenght = arrBoard[0].length 
