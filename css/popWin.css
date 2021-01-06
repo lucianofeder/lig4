@@ -20,7 +20,12 @@
   font-size: 35px;
   font-weight: bold;
 }
+#restartGame {
+  display: flex;
+  justify-content: center;
+}
 #popUp button {
+  margin-top: 5px;
   font-family: "Asap", sans-serif;
   text-transform: uppercase;
   color: #fff;

@@ -29,14 +29,11 @@ const mainGame = () => {
 
           fillVector(i, j);
           if (whoWon()) {
-            popUp();
-            document.getElementById(
-              "popUpWin"
-            ).innerText = `Parabens Player${playerTurn} Voce Venceu`;
+            popUp(`Parabens Player${playerTurn} Voce Venceu`);
           }
 
           if (drawVerify()) {
-            console.log(`O jogo EMPATOU`);
+            popUp(`O jogo EMPATOU`);
           }
           setPlayerTurn();
           break;
