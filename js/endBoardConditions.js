@@ -14,7 +14,7 @@ const verifyHorizontal = () => {
             player2++;
             player1 = 0;
         }
-        if (arrBoard[i][j] === 0) {
+        if (arrBoard[i][j] === '_') {
             player1 = 0;
             player2 = 0;
         }
