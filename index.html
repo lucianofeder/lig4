@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/balls.css">
     <link rel="stylesheet" href="css/menuStart.css">
     <link rel="stylesheet" href="css/popWin.css">
+    <script src="https://kit.fontawesome.com/92f6f8149a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,18 +19,20 @@
     </head>
 
     <header id="headerGame">
+        <div class="headerScoreContent">
+            <div class="headerScore">
+                <span id="player1Score">0</span>:<span id="player2Score">0</span>
+            </div>
+        </div>  
         <div>
             <div class="fixed turned player1Balls"></div>
         </div>
-        <div class="headerScore">
-            <span id="player1Score">0</span>:<span id="player2Score">0</span>
-        </div>
-
+        <div id="turnRound"><i></i></div>
         <div>
             <div class="fixed turned player2Balls"></div>
         </div>
 
-        <div id="turnRound"></div>
+       
     </header>
     
     <div class="glass">

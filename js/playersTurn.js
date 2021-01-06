@@ -1,22 +1,16 @@
 const turnPlayer = () => {
 
     if(playerTurn===1){
-    p.innerText = "PLAYER 1"
-    turnRound.appendChild(p)
+    turnRound.setAttribute("class", "fas fa-arrow-left")
     }
     if(playerTurn===2){
-     
-     p.innerHTML = "PLAYER 2"
-     turnRound.appendChild(p)
+    turnRound.setAttribute("class", "fas fa-arrow-right")
+  
     }
  }
 
 let turnRound = document.getElementById("turnRound")
-let p = document.createElement("p")
-p.innerText = "PLAYER 1"
-p.setAttribute("id", "style")
-
-turnRound.appendChild(p)
+turnRound.setAttribute("class", "fas fa-arrow-left")
 
 
 const setPlayerTurn = () => {
