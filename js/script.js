@@ -34,25 +34,30 @@ let fillVector = (k,z) => {
             
 }
 
-for(let k=0; k<7;k++){
-    let selectColumn = document.getElementById('column-'+k)
-
-    selectColumn.addEventListener('click',(evt)=>{
-        for(let z=5; z>=0; z--){
-            let selectCel = document.getElementById(k+'-'+z)
-            let searchChild = selectCel.querySelector('div')
-            if(searchChild){
-                console.log('Aqui já tem uma Bola! vou colocar na de cima')
-            }else{
-                let fillCel = document.createElement('div')
-                selectCel.appendChild(fillCel)
-                fillCel.classList.add('player1Balls')
-                fillVector(k,z)
-                console.log('k -' +k)
-                console.log('z -' +z)
-                console.log(vetorBoard)
-                break
+const insertBall = () => {
+    for(let k=0; k<7;k++){
+        let selectColumn = document.getElementById('column-'+k)
+    
+        selectColumn.addEventListener('click',(evt)=>{
+            for(let z=5; z>=0; z--){
+                let selectCel = document.getElementById(k+'-'+z)
+                let searchChild = selectCel.querySelector('div')
+                if(searchChild){
+                    console.log('Aqui já tem uma Bola! vou colocar na de cima')
+                }else{
+                    let fillCel = document.createElement('div')
+                    selectCel.appendChild(fillCel)
+                    fillCel.classList.add('player1Balls')
+                    fillVector(k,z)
+                    console.log('k -' +k)
+                    console.log('z -' +z)
+                    console.log(vetorBoard)
+                    break
+                }
             }
-        }
-    })
+        })
+    }
 }
+
+
+insertBall()

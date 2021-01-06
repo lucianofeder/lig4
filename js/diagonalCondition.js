@@ -69,3 +69,5 @@ const diagRightToLeftVerify = (linha, coluna) => {
         }
     }
 }
+
+let playerTurn = 1
