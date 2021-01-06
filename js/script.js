@@ -28,6 +28,38 @@ let vetorBoard = [
     [0,0,0,0,0,0,0]     //5
 ]
 
+let fillVector = (k,z) => {
+    
+    vetorBoard[z][k] = 'b'
+            
+}
+
+const insertBall = () => {
+    for(let k=0; k<7;k++){
+        let selectColumn = document.getElementById('column-'+k)
+    
+        selectColumn.addEventListener('click',(evt)=>{
+            for(let z=5; z>=0; z--){
+                let selectCel = document.getElementById(k+'-'+z)
+                let searchChild = selectCel.querySelector('div')
+                if(searchChild){
+                    console.log('Aqui já tem uma Bola! vou colocar na de cima')
+                }else{
+                    let fillCel = document.createElement('div')
+                    selectCel.appendChild(fillCel)
+                    fillCel.classList.add('player1Balls')
+                    fillVector(k,z)
+                    console.log('k -' +k)
+                    console.log('z -' +z)
+                    console.log(vetorBoard)
+                    break
+                }
+            }
+        }
+        let columnNumber = evt.currentTarget.id.replace(/column-/i, "")
+        winVerticalCondition(columnNumber)
+    })
+}
 
 
-
+insertBall()
