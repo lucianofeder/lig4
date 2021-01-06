@@ -24,9 +24,11 @@
   background-color: #ffff32;
 }
 .fixed {
-  width: 60px;
-  height: 60px;
-}
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+   
+  }
 /*
 O style é a estilização indicando a vez de cada Jogador
 */
