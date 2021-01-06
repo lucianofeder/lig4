@@ -55,8 +55,10 @@ const insertBall = () => {
                     break
                 }
             }
-        })
-    }
+        }
+        let columnNumber = evt.currentTarget.id.replace(/column-/i, "")
+        winVerticalCondition(columnNumber)
+    })
 }
 
 
