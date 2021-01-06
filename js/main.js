@@ -37,7 +37,9 @@ const mainGame = () => {
                     if (drawVerify()) {
                         console.log(`O jogo EMPATOU`)
                     }
+                    
                     setPlayerTurn()
+                    turnPlayer()
                     break
                 }
             }
