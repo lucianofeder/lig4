@@ -65,13 +65,13 @@ const verifyDiagLeftToRight = () => {
     let countPlayer = 0
 
     while (arrBoard[i][j]) {
-        if (arrBoard[i][j] === 1) {
+        if (arrBoard[i][j] === playerTurn) {
             countPlayer++
         } else {
             countPlayer = 0
         }
         if (countPlayer === 4) {
-            console.log(`Voce ganhou`)
+            return playerTurn
             //return playerTurn
         }
         i++
@@ -100,13 +100,13 @@ const verifyDiagRightToLeft = () => {
     let countPlayer = 0
 
     while (arrBoard[i][j]) {
-        if (arrBoard[i][j] === 1) {
+        if (arrBoard[i][j] === playerTurn) {
             countPlayer++
         } else {
             countPlayer = 0
         }
         if (countPlayer === 4) {
-            console.log(`Voce ganhou`)
+            return playerTurn
             //return playerTurn
         }
         i++
@@ -141,6 +141,7 @@ const whoWon = () => {
 const drawVerify = () => {
     for (let j = 0; j < arrBoard[0].length; j++) {
         if (arrBoard[0][j] === '_') {
+
             return false
         }
     }

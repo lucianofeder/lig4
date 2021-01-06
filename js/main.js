@@ -33,6 +33,10 @@ const mainGame = () => {
                     if (whoWon()) {
                         console.log(`Parabens Player${playerTurn} Voce Venceu`)
                     }
+
+                    if (drawVerify()) {
+                        console.log(`O jogo EMPATOU`)
+                    }
                     setPlayerTurn()
                     break
                 }
