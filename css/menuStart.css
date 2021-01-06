@@ -1,3 +1,13 @@
+#conteiner {
+  display: flex;
+  position: absolute;
+  transform: translateX(-50%);
+  top: -10%;
+  left: 50%;
+  width: 570px;
+  height: 800px;
+}
+
 #menuStart {
   border: solid 5px #ff6969;
   border-radius: 3px;
