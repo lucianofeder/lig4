@@ -1,29 +1,22 @@
 const verifyHorizontal = () => {
-    let ballPlayer1 = 1;
-    let ballPlayer2 = 2;
+    let tempWinningArr = []
 
     for (let i = 0; i < arrBoard.length; i++) {
-        let player1 = 0;
-        let player2 = 0;
+        let count = 0
         for (let j = 0; j < arrBoard[i].length; j++) {
-        if (arrBoard[i][j] === ballPlayer1) {
-            player1++;
-            player2 = 0;
+        if (arrBoard[i][j] === playerTurn) {
+            count++;
+            tempWinningArr.push([i,j])
+        }else{
+            count = 0
+            tempWinningArr = []
         }
-        if (arrBoard[i][j] === ballPlayer2) {
-            player2++;
-            player1 = 0;
-        }
-        if (arrBoard[i][j] === '_') {
-            player1 = 0;
-            player2 = 0;
-        }
-        if (player1 + player2 === 4) {
-            return player1 > player2 ? ballPlayer1 : ballPlayer2;
+        if (count === 4) {
+            winningArr = tempWinningArr
+            return playerTurn;
         }
         }
     }
-
     return 0
 };
 
@@ -32,16 +25,20 @@ const verifyVertical = () => {
     let winner = 0
     let count = 0
     let j = playedColumn
+    let tempWinningArr = []
     
   
     for (let i = 0; i < arrBoard.length; i++) {
         if (arrBoard[i][j] === playerTurn) {
             count++
+            tempWinningArr.push([i,j])
         } else {
             count = 0
+            tempWinningArr = []
         }
         if (count === 4) {
             winner = playerTurn
+            winningArr = tempWinningArr
             break
         }
     }
@@ -53,6 +50,7 @@ const verifyVertical = () => {
 
 const verifyDiagLeftToRight = () => {
     let maxDelta = 0
+    let tempWinningArr = []
 
     if (playedColumn > playedLine) {
         maxDelta = playedLine
@@ -67,10 +65,13 @@ const verifyDiagLeftToRight = () => {
     while (arrBoard[i][j]) {
         if (arrBoard[i][j] === playerTurn) {
             countPlayer++
+            tempWinningArr.push([i,j])
         } else {
             countPlayer = 0
+            tempWinningArr = []
         }
         if (countPlayer === 4) {
+            winningArr = tempWinningArr
             return playerTurn
         }
         i++
@@ -87,6 +88,7 @@ const verifyDiagLeftToRight = () => {
 const verifyDiagRightToLeft = () => {
     let maxDelta = 0
     let lineLenght = arrBoard[0].length -1
+    let tempWinningArr = []
 
     if ((lineLenght - playedColumn) > playedLine) {
         maxDelta = playedLine
@@ -97,17 +99,16 @@ const verifyDiagRightToLeft = () => {
     let i = playedLine - maxDelta
     let j = playedColumn + maxDelta
     let countPlayer = 0
-    console.log(`maxDelta:${maxDelta}`)
-    console.log(`linha inicial:${i}`)
-    console.log(`coluna inicial:${j}`)
     while (arrBoard[i][j]) {
-        console.log(`linha:${i} / coluna:${j} / valor:${arrBoard[i][j]}`)
         if (arrBoard[i][j] === playerTurn) {
             countPlayer++
+            tempWinningArr.push([i,j])
         } else {
             countPlayer = 0
+            tempWinningArr = []
         }
         if (countPlayer === 4) {
+            winningArr = tempWinningArr
             return playerTurn
             //return playerTurn
         }
@@ -135,6 +136,7 @@ const whoWon = () => {
     } else {
         won = verifyDiagRightToLeft()
     }
+    highlightWinningCondition()
 
     return won
 }
