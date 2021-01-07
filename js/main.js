@@ -39,6 +39,7 @@ const mainGame = () => {
             popUp(`O jogo EMPATOU`);
           }
           setPlayerTurn();
+          songPiece();
           turnPlayer();
           break;
         }
