@@ -28,6 +28,7 @@ const mainGame = () => {
           let fillCel = document.createElement("div");
           selectCel.appendChild(fillCel);
           fillCel.classList.add(`player${playerTurn}Balls`);
+          fillCel.classList.add('playAnimation');
 
           fillVector(i, j);
           if (whoWon()) {
