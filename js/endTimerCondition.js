@@ -15,8 +15,8 @@ const updateTimer = async () => {
             playerTimeDiv.innerText = playerTime
         }
         if (playerTime === 0) {
-            popUp(`O tempo do <span id="playerWon${playerTurn}">Player${playerTurn}</span> ESGOTOU`)
             setPlayerTurn()
+            popUp(`Vitoria do <span id="playerWon${playerTurn}">Player${playerTurn}</span> pelo Tempo`)
             updateScore(playerTurn)
             setPlayerTurn()
         }
