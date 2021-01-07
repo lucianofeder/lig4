@@ -23,21 +23,8 @@
   cursor: pointer;
   background-color: #ffff32;
 }
-.fixed {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-   
+.headerBall {
+   width: 60px; 
+   height: 60px; 
+   margin-bottom:15px; 
   }
-/*
-O style é a estilização indicando a vez de cada Jogador
-*/
-
-#turnRound p {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-}
-#style {
-  font-size: 0.8rem;
-  color: black;
-}
