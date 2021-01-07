@@ -7,6 +7,8 @@ let arrBoard = [
   ["_", "_", "_", "_", "_", "_", "_"],
 ];
 
+let winningArr = []
+
 let playedLine;
 let playedColumn;
 let playerTurn = 1;
