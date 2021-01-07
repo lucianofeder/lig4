@@ -1,7 +1,9 @@
 const popUp = (mensagem) => {
   document.getElementById("popUpWin").innerHTML = mensagem;
   document.getElementById("popUp").style.display = "block";
-  document.getElementById("conteiner").style.display = "block";
+  let conteinerDiv = document.getElementById("conteiner")
+  conteinerDiv.style.display = "block";
+  conteinerDiv.classList.remove('blur')
 };
 
 const highlightWinningCondition = () => {
@@ -9,7 +11,12 @@ const highlightWinningCondition = () => {
     let linha = winningArr[i][0]
     let coluna = winningArr[i][1]
     let winningDiv = document.getElementById(`${coluna}-${linha}`)
-    winningDiv.classList.add(`winningBorder`)
+    if(playerTurn===1){
+    winningDiv.classList.add(`winningBorderRed`)
+    }
+    if(playerTurn===2){
+      winningDiv.classList.add(`winningBorderYellow`)
+      }
   }
 }
 

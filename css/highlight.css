@@ -1,0 +1,12 @@
+.winningBorderRed{
+  background: radial-gradient(circle, rgb(126 82 82) 0%, rgb(247 73 73) 48%, rgb(241 110 110) 100%);
+    box-shadow: 2px 0px 26px 0px #ce1b0e;
+    border: 2px dashed #f3dfba;
+  border-radius: 5px;
+  }
+  .winningBorderYellow{
+    background: radial-gradient(circle, rgb(255 247 0) 0%, rgba(255,254,65,1) 48%, rgb(255 250 195) 100%);
+    box-shadow: 2px 0px 26px 0px  #ffff63;
+    border: 2px dashed white;
+    border-radius: 5px;
+  }
