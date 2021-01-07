@@ -63,6 +63,30 @@ body {
   transform: rotate3d(1, 762, 1, 180deg); 
   transition: 1.7s; 
 }
+.rodape{
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px 0;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rodape>a{
+  font-weight: bold;
+  text-decoration: none;
+}
+.rodape>.first{
+  margin-bottom: 15px;
+}
+.rodape>.last{
+  margin-top: 15px;
+}
+.rodape p{
+  color: aliceblue;
+  font-family: 'Open Sans';
+}
 @media (max-width: 560px) {
   #title {
     max-width: 560px;
