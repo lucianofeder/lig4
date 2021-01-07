@@ -1,7 +1,7 @@
 .glass{
     margin: 0 auto;
     padding: 20px;
-    width: 520px;
+    width: 450px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.2);
@@ -13,8 +13,8 @@
 }
 
 .cel-modifier{
-    width :70px;
-    height: 70px;
+    width :60px;
+    height: 60px;
     border : 2px solid white;
     display: flex;
     justify-content: center;

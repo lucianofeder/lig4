@@ -26,38 +26,32 @@ h1 {
   width: 100%;
 }
 .headerScore {
-  background-color: #833737d5;
+  background-color: #ffc863;
   border: 5px double rgb(226, 110, 110);
-  width: 200px;
+  width: 400px;
   margin: 20px auto;
   color: #fff;
   font-size: 46px;
-  border-radius: 50%;
+
   text-align: center;
   padding: 15px 20px;
   font-family: sans-serif;
- 
 }
 .score {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-size: "Asap", sans-serif;
   padding: 10px;
-  
 }
 
 #turnRound {
- 
   text-align: center;
 }
 .fa-arrow-right::before {
   font-size: 57px;
-  color: #fdfd03;
+  color: #fafa76;
 }
 .fa-arrow-left::before {
   font-size: 57px;
-  color: #f31f21;
+  color: #fd7474;
 }
-
-
-

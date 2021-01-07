@@ -1,51 +1,43 @@
-
 .player1Balls {
-    width: 90%;
-    height: 90%;
-    
-    background-color: #FD7474;
-    border-radius: 60%;
-    border: 2px solid#e67676;
-     
+  width: 90%;
+  height: 90%;
+
+  background-color: #fd7474;
+  border-radius: 60%;
+  border: 2px solid#e67676;
 }
 
 .player1Balls:hover {
-    cursor: pointer;
-    background-color: #BB4646;
-    
+  cursor: pointer;
+  background-color: #bb4646;
 }
 .player2Balls {
-    width: 90%;
-    height: 90%;
-    
-    background-color: #fafa76;
-    border-radius: 60%;
-    border: 2px solid #E4E463;
- 
+  width: 90%;
+  height: 90%;
+
+  background-color: #fafa76;
+  border-radius: 60%;
+  border: 2px solid #e4e463;
 }
 .player2Balls:hover {
-    cursor: pointer;
-    background-color: #FFFF32;
-    
+  cursor: pointer;
+  background-color: #ffff32;
 }
 .fixed {
     width: 60px;
     height: 60px;
-    
+    margin-bottom: 15px;
    
   }
 /*
 O style é a estilização indicando a vez de cada Jogador
 */
 
-#turnRound p{
-    font-size: 1.6rem;
-    text-transform: uppercase;
+#turnRound p {
+  font-size: 1.6rem;
+  text-transform: uppercase;
 }
- #style {
-
-    font-size: 0.8rem;
-    color: black;
-  
+#style {
+  font-size: 0.8rem;
+  color: black;
 }
-
