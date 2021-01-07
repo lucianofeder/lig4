@@ -12,6 +12,7 @@ let winningArr = []
 let playedLine;
 let playedColumn;
 let playerTurn = 1;
+let gameWon = false
 
 setBoard();
 
