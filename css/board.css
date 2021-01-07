@@ -1,7 +1,39 @@
-.glass{
+.glass {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 450px;
+  width: 100vw;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  background-clip: padding-box;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cel-modifier {
+  max-width: 60px;
+  width: 100vw;
+  height: 60px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color, border;
+  transition-duration: 0.5s;
+}
+
+.column-modifier:hover {
+  background-color: rgba(250, 250, 250, 0.4);
+}
+@media (max-width: 560px) {
+  .glass {
     margin: 0 auto;
     padding: 20px;
-    width: 450px;
+    max-width: 250px;
+    width: 100vw;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.2);
@@ -10,20 +42,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.cel-modifier{
-    width :60px;
-    height: 60px;
-    border : 2px solid white;
+  }
+  .cel-modifier {
+    max-width: 30px;
+    width: 100vw;
+    height: 30px;
+    border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color, border;
     transition-duration: 0.5s;
-}
-
-.column-modifier:hover {
-    background-color: rgba(250, 250, 250, 0.4);
-
+  }
 }
