@@ -6,7 +6,7 @@ body {
   background-color: burlywood;
 }
 
-h1 {
+#title h1 {
   font-size: 2rem;
   font-family: "Asap", sans-serif;
   font-weight: bold;
@@ -17,7 +17,8 @@ h1 {
 }
 
 #headerGame {
-  width: 560px;
+  max-width: 560px;
+  width: 100vw;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
@@ -30,11 +31,11 @@ h1 {
   background-color: #ffd27e;
   border: 5px solid rgb(226, 110, 110);
   border-radius: 10%;
-  width: 400px;
+  max-width: 400px;
+  width: 100vw;
   margin: 20px auto;
   color: #fff;
   font-size: 46px;
-
   text-align: center;
   padding: 15px 20px;
   font-family: sans-serif;
@@ -62,4 +63,22 @@ h1 {
   transform: rotate3d(1, 762, 1, 180deg); 
   transition: 1.7s; 
 }
- 
+@media (max-width: 560px) {
+  #title {
+    max-width: 560px;
+    width: 100vw;
+  }
+  .headerScore {
+    background-color: #ffd27e;
+    border: 5px solid rgb(226, 110, 110);
+    border-radius: 10%;
+    max-width: 200px;
+    width: 100vw;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 46px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: sans-serif;
+  }
+}
