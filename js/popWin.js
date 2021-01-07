@@ -21,7 +21,8 @@ const restartGame = () => {
   setBoard();
 };
 
-const buttonReset = document.getElementById("restartGame");
+const buttonReset = document.getElementById("restartButton");
+
 const buttonRestart = () => {
   restartGame();
   mainGame();
