@@ -1,5 +1,5 @@
 const popUp = (mensagem) => {
-  document.getElementById("popUpWin").innerText = mensagem;
+  document.getElementById("popUpWin").innerHTML = mensagem;
   document.getElementById("popUp").style.display = "block";
   document.getElementById("conteiner").style.display = "block";
 };
@@ -31,7 +31,8 @@ const restartGame = () => {
   setBoard();
 };
 
-const buttonReset = document.getElementById("restartGame");
+const buttonReset = document.getElementById("restartButton");
+
 const buttonRestart = () => {
   restartGame();
   mainGame();
