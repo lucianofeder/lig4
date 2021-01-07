@@ -5,21 +5,22 @@
   box-shadow: 0 0 0 1em cadetblue, 0 0 0 2em #ff6969;
   padding: 20px;
   background-color: #ebbd7a;
-  width: auto;
+  width: 600px;
   height: auto;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 50%;
+  top: 15%;
 }
 
 #popUpWin {
   text-align: center;
   font-family: "Asap", sans-serif;
-  color: #ff6969;
+  color: #eedfc8;
   font-size: 35px;
   font-weight: bold;
 }
+
 #restartGame {
   display: flex;
   justify-content: center;

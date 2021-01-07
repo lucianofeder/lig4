@@ -9,6 +9,7 @@ body {
 h1 {
   font-size: 2rem;
   font-family: "Asap", sans-serif;
+  font-weight: bold;
   padding: 10px;
   text-align: center;
   background-color: cadetblue;
@@ -26,8 +27,9 @@ h1 {
   width: 100%;
 }
 .headerScore {
-  background-color: #ffc863;
-  border: 5px double rgb(226, 110, 110);
+  background-color: #ffd27e;
+  border: 5px solid rgb(226, 110, 110);
+  border-radius: 10%;
   width: 400px;
   margin: 20px auto;
   color: #fff;
