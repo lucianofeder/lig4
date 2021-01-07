@@ -31,10 +31,11 @@ const setPlayerTurn = () => {
 
 const songPiece =() => {
 
-   
-    let changePieceAudio = document.createElement("audio")
-    changePieceAudio.src = "songs/SongPiece.mp3"
-    changePieceAudio.autoplay = true
-    document.getElementById("conteiner").appendChild(changePieceAudio)
+    let audio = document.getElementById(`playAudio`)
+    audio.play()
+    // let changePieceAudio = document.createElement("audio")
+    // changePieceAudio.src = "songs/SongPiece.mp3"
+    // changePieceAudio.autoplay = true
+    // document.getElementById("conteiner").appendChild(changePieceAudio)
 
 }
