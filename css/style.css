@@ -70,12 +70,12 @@ body {
 .fixed-arrow {
    color: #fd7474; 
    transform: none; 
-   transition: 2s; 
+   transition: 0.5s; 
   } 
 .rotate-arrow-ball { 
   color: #fafa76;
   transform: rotate3d(1, 762, 1, 180deg); 
-  transition: 1.7s; 
+  transition: 0.5s; 
 }
 .rodape{
   width: 100%;
