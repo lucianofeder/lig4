@@ -20,13 +20,21 @@ let player2Balls = document.querySelector(".player2Balls")
 
 const setPlayerTurn = () => {
     if (playerTurn === 1) {
+        
         playerTurn = 2
     } else {
         playerTurn = 1
+       
+
     }
 }
 
-// Quando clicar em "Você" ou "PC" irá alternar os jogadores para fazer sua jogada
-// Por enquanto o "clique" não está dentro do board
-// Mas quando clicar para fazer a jogada no board
-// Irá alternar os jogador na parte de cima
+const songPiece =() => {
+
+   
+    let changePieceAudio = document.createElement("audio")
+    changePieceAudio.src = "songs/SongPiece.mp3"
+    changePieceAudio.autoplay = true
+    document.getElementById("conteiner").appendChild(changePieceAudio)
+
+}
