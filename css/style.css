@@ -17,7 +17,8 @@ body {
 }
 
 #headerGame {
-  width: 560px;
+  max-width: 560px;
+  width: 100vw;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
@@ -30,11 +31,11 @@ body {
   background-color: #ffd27e;
   border: 5px solid rgb(226, 110, 110);
   border-radius: 10%;
-  width: 400px;
+  max-width: 400px;
+  width: 100vw;
   margin: 20px auto;
   color: #fff;
   font-size: 46px;
-
   text-align: center;
   padding: 15px 20px;
   font-family: sans-serif;
@@ -58,7 +59,21 @@ body {
   color: #fd7474;
 }
 @media (max-width: 560px) {
-  #title h1 {
-    width: 560px;
+  #title {
+    max-width: 560px;
+    width: 100vw;
+  }
+  .headerScore {
+    background-color: #ffd27e;
+    border: 5px solid rgb(226, 110, 110);
+    border-radius: 10%;
+    max-width: 200px;
+    width: 100vw;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 46px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: sans-serif;
   }
 }

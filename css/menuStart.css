@@ -4,7 +4,8 @@
   transform: translateX(-50%);
   top: -10%;
   left: 50%;
-  width: 570px;
+  max-width: 570px;
+  width: 100vw;
   height: 800px;
 }
 
@@ -14,7 +15,8 @@
   box-shadow: 0 0 0 2em #ebbd7a, 0 0 0 4em cadetblue;
   padding: 20px;
   background-color: cadetblue;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   height: auto;
   position: absolute;
   left: 50%;
@@ -39,7 +41,8 @@
   color: #fff;
   font-size: 20px;
   font-weight: bold;
-  width: 200px;
+  max-width: 200px;
+  width: 100vw;
   height: 80px;
   background: #f16a6a;
   border: solid 6px burlywood;
@@ -57,50 +60,45 @@
     transform: translateX(-50%);
     top: -10%;
     left: 50%;
-    width: 570px;
-    height: 800px;
+    max-width: 570px;
+    width: 100vw;
+    height: 620px;
   }
 
   #menuStart {
     border: solid 5px #ff6969;
     border-radius: 3px;
-    box-shadow: 0 0 0 2em #ebbd7a, 0 0 0 4em cadetblue;
+    box-shadow: 0 0 0 1em #ebbd7a, 0 0 0 2em cadetblue;
     padding: 20px;
     background-color: cadetblue;
-    width: 100px;
-    height: auto;
+    max-width: 150px;
+    width: 100%;
+    height: 80px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 50%;
   }
-
   #menuStart p {
     text-align: center;
     font-family: "Asap", sans-serif;
     color: white;
-    font-size: 10px;
+    font-size: 25px;
     font-weight: bold;
-  }
-  #startGame {
-    display: flex;
-    justify-content: center;
+    padding: 3px;
   }
   #menuStart button {
     font-family: "Asap", sans-serif;
     text-transform: uppercase;
     color: #fff;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
-    width: 100px;
-    height: 80px;
+    max-width: 100px;
+    width: 100vw;
+    height: 60px;
     background: #f16a6a;
     border: solid 6px burlywood;
     cursor: pointer;
     border-radius: 15px;
-  }
-  #menuStart button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-      0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }
 }
