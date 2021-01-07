@@ -39,6 +39,7 @@ const mainGame = () => {
 
           if (drawVerify()) {
             popUp(`O jogo EMPATOU`);
+            gameWon = true
           }
           setPlayerTurn();
           songPiece();
