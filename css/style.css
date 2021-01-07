@@ -6,7 +6,7 @@ body {
   background-color: burlywood;
 }
 
-h1 {
+#title h1 {
   font-size: 2rem;
   font-family: "Asap", sans-serif;
   font-weight: bold;
@@ -56,4 +56,9 @@ h1 {
 .fa-arrow-left::before {
   font-size: 57px;
   color: #fd7474;
+}
+@media (max-width: 560px) {
+  #title h1 {
+    width: 560px;
+  }
 }

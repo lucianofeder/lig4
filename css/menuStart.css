@@ -50,3 +50,57 @@
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+@media (max-width: 560px) {
+  #conteiner {
+    display: flex;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -10%;
+    left: 50%;
+    width: 570px;
+    height: 800px;
+  }
+
+  #menuStart {
+    border: solid 5px #ff6969;
+    border-radius: 3px;
+    box-shadow: 0 0 0 2em #ebbd7a, 0 0 0 4em cadetblue;
+    padding: 20px;
+    background-color: cadetblue;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+  }
+
+  #menuStart p {
+    text-align: center;
+    font-family: "Asap", sans-serif;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  #startGame {
+    display: flex;
+    justify-content: center;
+  }
+  #menuStart button {
+    font-family: "Asap", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    width: 100px;
+    height: 80px;
+    background: #f16a6a;
+    border: solid 6px burlywood;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  #menuStart button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+}
