@@ -12,6 +12,7 @@ let winningArr = []
 let playedLine;
 let playedColumn;
 let playerTurn = 1;
+let gameWon = false
 
 setBoard();
 
@@ -28,6 +29,7 @@ const mainGame = () => {
           let fillCel = document.createElement("div");
           selectCel.appendChild(fillCel);
           fillCel.classList.add(`player${playerTurn}Balls`);
+          fillCel.classList.add('playAnimation');
 
           fillVector(i, j);
           if (whoWon()) {

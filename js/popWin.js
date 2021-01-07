@@ -21,14 +21,23 @@ const resetArray = () => {
   }
 };
 
+const resetTimer = () => {
+  let player1TimeDiv = document.getElementById('timerPlayer1')
+  let player2TimeDiv = document.getElementById('timerPlayer2')
+  let time = player1TimeDiv.getAttribute('data-time')
+
+  player1TimeDiv.innerText = time
+  player2TimeDiv.innerText = time
+}
+
 const restartGame = () => {
   let boardArea = document.getElementsByClassName("glass")[0];
-  console.log(boardArea);
   boardArea.innerHTML = "";
   winningArr = []
-
+  gameWon = false
   resetArray();
   setBoard();
+  resetTimer();
 };
 
 const buttonReset = document.getElementById("restartButton");
@@ -40,3 +49,4 @@ const buttonRestart = () => {
   document.getElementById("conteiner").style.display = "none";
 };
 buttonReset.addEventListener("click", buttonRestart);
+buttonReset.addEventListener('click', updateTimer)

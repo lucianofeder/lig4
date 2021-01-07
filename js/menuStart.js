@@ -4,3 +4,4 @@ const click = () => {
   document.getElementById("conteiner").style.display = "none";
 };
 button.addEventListener("click", click);
+button.addEventListener("click", updateTimer)

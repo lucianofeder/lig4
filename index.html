@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/balls.css">
     <link rel="stylesheet" href="css/menuStart.css">
     <link rel="stylesheet" href="css/popWin.css">
+    <link rel="stylesheet" href="./css/playAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <script src="https://kit.fontawesome.com/92f6f8149a.js" crossorigin="anonymous"></script>
 </head>
@@ -24,7 +25,12 @@
     <header id="headerGame">
         <div class="headerScoreContent">
             <div class="headerScore">
-                <span id="player1Score">0</span>:<span id="player2Score">0</span>
+                <div id="timerPlayer1" class="timer" data-time="60">60</div>
+                <div>
+                    <span id="player1Score">0</span>:<span id="player2Score">0</span>
+                </div>
+                <div id="timerPlayer2" class="timer" data-time="60">60</div>
+                
             </div>
         </div>
         <div id="headerPlayerTurn">
@@ -70,6 +76,7 @@
         </a>
         <p class="last">Kenzie Academy Brasil &copy;</p>
     </footer>
+    <script src="./js/endTimerCondition.js"></script>
     <script src="./js/boardGenerator.js"></script>
     <script src="./js/menuStart.js"></script>
     <script src="./js/endBoardConditions.js"></script>
