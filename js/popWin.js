@@ -1,7 +1,9 @@
 const popUp = (mensagem) => {
   document.getElementById("popUpWin").innerHTML = mensagem;
   document.getElementById("popUp").style.display = "block";
-  document.getElementById("conteiner").style.display = "block";
+  let conteinerDiv = document.getElementById("conteiner")
+  conteinerDiv.style.display = "block";
+  conteinerDiv.classList.remove('blur')
 };
 
 const highlightWinningCondition = () => {
