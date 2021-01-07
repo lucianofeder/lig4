@@ -9,7 +9,12 @@ const highlightWinningCondition = () => {
     let linha = winningArr[i][0]
     let coluna = winningArr[i][1]
     let winningDiv = document.getElementById(`${coluna}-${linha}`)
-    winningDiv.classList.add(`winningBorder`)
+    if(playerTurn===1){
+    winningDiv.classList.add(`winningBorderRed`)
+    }
+    if(playerTurn===2){
+      winningDiv.classList.add(`winningBorderYellow`)
+      }
   }
 }
 
