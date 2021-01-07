@@ -39,6 +39,8 @@ body {
   text-align: center;
   padding: 15px 20px;
   font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
 }
 .score {
   font-size: 1.4rem;
