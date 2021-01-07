@@ -46,14 +46,20 @@ h1 {
   padding: 10px;
 }
 
-#turnRound {
-  text-align: center;
-}
-.fa-arrow-right::before {
-  font-size: 57px;
-  color: #fafa76;
-}
-.fa-arrow-left::before {
-  font-size: 57px;
+.fa-arrow-left { 
+  width: 50px; 
+  height: 80px; 
+  font-size: 57px; 
   color: #fd7474;
+ } 
+.fixed-arrow {
+   color: #fd7474; 
+   transform: none; 
+   transition: 2s; 
+  } 
+.rotate-arrow-ball { 
+  color: #fafa76;
+  transform: rotate3d(1, 762, 1, 180deg); 
+  transition: 1.7s; 
 }
+ 
