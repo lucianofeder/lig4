@@ -72,7 +72,6 @@ const verifyDiagLeftToRight = () => {
         }
         if (countPlayer === 4) {
             return playerTurn
-            //return playerTurn
         }
         i++
         j++
@@ -87,7 +86,7 @@ const verifyDiagLeftToRight = () => {
 
 const verifyDiagRightToLeft = () => {
     let maxDelta = 0
-    let lineLenght = arrBoard[0].length 
+    let lineLenght = arrBoard[0].length -1
 
     if ((lineLenght - playedColumn) > playedLine) {
         maxDelta = playedLine
@@ -98,8 +97,11 @@ const verifyDiagRightToLeft = () => {
     let i = playedLine - maxDelta
     let j = playedColumn + maxDelta
     let countPlayer = 0
-
+    console.log(`maxDelta:${maxDelta}`)
+    console.log(`linha inicial:${i}`)
+    console.log(`coluna inicial:${j}`)
     while (arrBoard[i][j]) {
+        console.log(`linha:${i} / coluna:${j} / valor:${arrBoard[i][j]}`)
         if (arrBoard[i][j] === playerTurn) {
             countPlayer++
         } else {
@@ -112,7 +114,7 @@ const verifyDiagRightToLeft = () => {
         i++
         j--
 
-        if (i >= arrBoard.length || j <= 0) { // Apenas para nao dar erro quando estourar as dimensoes da Matris
+        if (i >= arrBoard.length || j < 0) { // Apenas para nao dar erro quando estourar as dimensoes da Matris
             break
         }
     }
