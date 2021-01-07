@@ -24,14 +24,6 @@
   transition-duration: 0.5s;
 }
 
-.winningBorder {
-  border-color: cadetblue;
-}
-
-.winningBorder::after {
-  background-color: red;
-}
-
 .column-modifier:hover {
   background-color: rgba(250, 250, 250, 0.4);
 }
